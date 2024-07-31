@@ -15,7 +15,7 @@
         lazy-rules
         :rules="[ val => val && val.length > 0 || 'Please type your name']"
       />
-
+<!-- surname -->
       <q-input
         filled
         v-model="name"
@@ -55,12 +55,14 @@ export default {
   setup () {
     const $q = useQuasar()
 
-    const name = ref(null)
+    const name = ref("หฤทัย")
+    const surname = ref("ยุวรัตน์")
     const age = ref(null)
     const accept = ref(false)
 
     return {
       name,
+      surname,
       age,
       accept,
 
