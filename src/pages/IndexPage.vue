@@ -71,7 +71,7 @@ import { ref } from 'vue'
 export default {
   setup () {
     const $q = useQuasar()
-
+    const language = ref("ภาษาไทย")
     const id = ref("6604101407")
     const name = ref("หฤทัย")
     const surname = ref("ยุวรัตน์")
@@ -100,23 +100,19 @@ export default {
             color: 'green-4',
             textColor: 'white',
             icon: 'cloud_done',
-            message: 'Submitted'
+            message: 'Submitted',
           })
         }
       },
 
       onReset () {
-<<<<<<< HEAD
         id.value = null
         surname.value = null
-=======
-        language.value = null
-        id.value = null
->>>>>>> thai-lang
         name.value = null
         surname.value = null
         age.value = null
         accept.value = false
+        language = false
       }
     }
   }
